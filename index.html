@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Checkout page</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+
+    <main>
+      <!-- Formulário para inputs -->
+      <form id="form" class="form">
+        <!-- Informações de contato -->
+        <section>
+          <h2>Contact information</h2>
+
+          <div class="form-control">
+            <label for="email">E-mail</label>
+            <i class="fa-solid fa-envelope label-input-icons"></i>
+            <input 
+              type="text" 
+              id="email" 
+              placeholder="Enter your email..." 
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <i class="fa-solid fa-phone label-input-icons"></i>
+            <input 
+              type="number" 
+              id="phone" 
+              placeholder="Enter your phone..." 
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+        </section>
+
+        <!-- Informações de endereço -->
+        <section>
+          <h2>Shipping address</h2>
+
+          <div class="form-control">
+            <label for="username">Full name</label>
+            <i class="fa-solid fa-user label-input-icons"></i>
+            <input 
+              type="text" 
+              id="username" 
+              placeholder="Your name..." 
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="address">Address</label>
+            <i class="fa-solid fa-house label-input-icons"></i>
+            <input 
+              type="text" 
+              id="address" 
+              placeholder="Your address..." 
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="city">City</label>
+            <i class="fa-solid fa-city label-input-icons"></i>
+            <input 
+              type="text" 
+              id="city" 
+              placeholder="Your city..." 
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+        </section>
+
+        <section>
+          <div class="form-control">
+            <label for="country">Country</label>
+            <i class="fa-solid fa-earth label-input-icons"></i>
+            <select name="country" id="country">
+              <option value="Your country..." disabled selected>
+                Your country...
+              </option>
+              <option value="Brazil">Brazil</option>
+              <option value="Canada">Canada</option>
+              <option value="Switzerland">Switzerland</option>
+            </select>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="postal-code">Postal code</label>
+            <i class="fa-solid fa-envelopes-bulk label-input-icons"></i>
+            <input
+              type="text"
+              id="postal-code"
+              placeholder="Your postal code..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+        </section>
+
+        <!-- Concordância com salvamento para próxima compra -->
+        <section>
+          <input type="checkbox" name="save-information" id="save">
+          <label for="save"></label>
+        </section>
+
+        <button type="submit">Continue</button>
+      </form>
+
+      <section>
+        <div class="container-cart">
+
+          <div class="container-item">
+            <img src="./assets/photo1.png" alt="Item 1" />
+  
+            <div class="item-informations">
+              <div>
+                <h2>Vintage Backbag</h2>
+                <h6>$<span id="backbag-price">54.99</span></h6>
+                <p>$94.99</p>
+              </div>
+  
+              <div>
+                <div class="item-counter">
+                  <button id="backbag-btn-minus" class="button-counter">-</button>
+                  <h4 id="backbag-counter" class="backbag-counter">1</h4>
+                  <button id="backbag-btn-plus" class="button-counter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="container-item">
+
+            <img src="./assets/photo2.png" alt="Item 2" />
+
+            <div class="item-informations">
+              <div>
+                <h2>Levi Shoes</h2>
+                <h6>$<span id="shoes-price">74.99</span></h6>
+                <p>$124.99</p>
+              </div>
+  
+              <div>
+                <div class="item-counter">
+                  <button id="shoes-btn-minus" class="button-counter">-</button>
+                  <h4 id="shoes-counter" class="shoes-counter">1</h4>
+                  <button id="shoes-btn-plus" class="button-counter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <hr />
+
+            <div class="container-price">
+              <h4>Shipping</h4>
+              <p>$<span id="shipping-price">19</span></p>
+            </div>
+            <hr />
+            <div class="container-price">
+              <h4>Total</h4>
+              <p>$<span id="total-price">148.98</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por <span class="author">Enzo Pereira de Melo</span></p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e2705bf5c0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
