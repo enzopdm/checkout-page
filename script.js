@@ -73,8 +73,22 @@ function checkInputs() {
     return formControl.className === "form-control success";
   });
 
-  if (formIsValid) {
-    alert("O login foi realizado com sucesso!");
+  if (formIsValid && parseFloat(totalPrice.innerText) > 0) {
+    swal({
+      title: "Great!",
+      text: "The products will reach you in a few days!",
+      icon: "success",
+      button: "Done!",
+    });
+  }
+
+  if (formIsValid && parseFloat(totalPrice.innerText) <= 0) {
+    swal({
+      title: "Oh, no!",
+      text: "It looks like you didn't choose anything, add some items to the cart!",
+      icon: "error",
+      button: "Done!",
+    });
   }
 }
 
@@ -87,6 +101,9 @@ function setErrorFor(input, message) {
 
   //Adicionar a classe de erro
   formControl.className = "form-control error";
+
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 function setSuccessFor(input, message) {
