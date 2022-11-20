@@ -33,8 +33,8 @@
               id="email" 
               placeholder="Enter your email..." 
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
 
@@ -42,12 +42,12 @@
             <label for="phone">Phone</label>
             <i class="fa-solid fa-phone label-input-icons"></i>
             <input 
-              type="number" 
+              type="tel" 
               id="phone" 
-              placeholder="Enter your phone..." 
+              placeholder="Enter your phone..."
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
         </section>
@@ -64,8 +64,8 @@
               id="username" 
               placeholder="Your name..." 
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
 
@@ -77,8 +77,8 @@
               id="address" 
               placeholder="Your address..." 
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
 
@@ -90,13 +90,13 @@
               id="city" 
               placeholder="Your city..." 
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
         </section>
 
-        <section>
+        <section class="additional-informations">
           <div class="form-control">
             <label for="country">Country</label>
             <i class="fa-solid fa-earth label-input-icons"></i>
@@ -108,8 +108,8 @@
               <option value="Canada">Canada</option>
               <option value="Switzerland">Switzerland</option>
             </select>
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle select-response-icons"></i>
+            <i class="fas fa-check-circle select-response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
 
@@ -121,19 +121,23 @@
               id="postal-code"
               placeholder="Your postal code..."
             />
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle response-icons"></i>
+            <i class="fas fa-check-circle response-icons"></i>
             <small>Mensagem de erro</small>
           </div>
         </section>
 
         <!-- Concordância com salvamento para próxima compra -->
-        <section>
-          <input type="checkbox" name="save-information" id="save">
-          <label for="save"></label>
+        <section class="save-information">
+          <label for="save">  
+            <input type="checkbox" id="save">
+            Save this information for next time
+          </label>
         </section>
 
-        <button type="submit">Continue</button>
+        <section class="container-button">
+          <button type="submit">Continue</button>
+        </section>
       </form>
 
       <section>

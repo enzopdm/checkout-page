@@ -1,4 +1,4 @@
-Nesse projeto, criei um site de uma galeria de imagens para uma pessoa aleatória, focando em praticar minhas habilidades de responsividade com HTML e CSS.
+Nesse projeto, criei um site de uma página de checagem se usuário digita as informações corretamente, além de um carrinho prévio em que o usuário pode aumentar e diminuir a quantidade de produtos e a alteração é refletida em toda as áreas de referência. Foi utilizado as tecnologias HTML, CSS e JavaScript.
 
 - Link para acessar o site online: 
 

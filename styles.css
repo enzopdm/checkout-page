@@ -10,7 +10,7 @@
 body {
   max-width: 100vw;
   max-height: 100vh;
-  padding: 0 200px;
+  padding: 0 270px;
 }
 
 header {
@@ -23,16 +23,181 @@ header {
 
 main {
   display: flex;
+  justify-content: center;
   gap: 113px;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.author {
+  color: #000;
+  font-weight: 600;
+}
+
 /* Área formulário */
+
+.form {
+  width: 465px;
+}
 
 .form h2 {
   margin-bottom: 15px;
   color: #333333;
   font-weight: 600;
   font-size: 18px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4F4F4F;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  height: 52px;
+  outline: none;
+  font-size: 14px;
+  padding: 10px 0 10px 37px;
+}
+
+.form-control input::placeholder {
+  font-weight: 500;
+  color: #828282;
+}
+
+.form-control .response-icons {
+  position: absolute;
+  top: 39px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control .select-response-icons {
+  position: absolute;
+  top: 39px;
+  right: 20px;
+  visibility: hidden;
+}
+
+.label-input-icons {
+  position: absolute;
+  top: 39px;
+  left: 12px;
+  color: #828282;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 11px;
+}
+
+.additional-informations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.additional-informations .form-control {
+  flex-basis: 45%;
+}
+
+.form-control select {
+  display: block;
+  width: 100%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  height: 52px;
+  outline: none;
+  font-size: 14px;
+  padding: 10px 0 10px 37px;
+}
+
+.save-information {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.save-information input {
+  border: 1px solid #828282;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+}
+
+.save-information label {
+  color: #4F4F4F;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.container-button {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  text-align: end;
+}
+
+.container-button button {
+  width: 166px;
+  height: 54px;
+  background: #F2994A;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* Error and success */
+
+.form-control.success input {
+  border: 2px solid #2ecc71;
+}
+
+.form-control.error input {
+  border: 2px solid #e43500;
+}
+
+.form-control.success select {
+  border: 2px solid #2ecc71;
+}
+
+.form-control.error select {
+  border: 2px solid #e43500;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e43500;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e43500;
 }
 
 /* Área carrinho de produtos */
