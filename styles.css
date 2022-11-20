@@ -301,3 +301,71 @@ hr {
 .container-price p {
   font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 0 12px;
+  }
+
+  header {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 0;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Área formulário */
+
+  .form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .form-control input {
+    padding: 10px 0 10px 35px;
+  }
+
+  .form-control select {
+    padding: 10px 0 10px 35px;
+  }
+
+  .additional-informations .form-control {
+    flex-basis: 48%;
+  }
+
+  /* Área carrinho de produtos */
+
+  .container-cart {
+    width: 100%;
+    height: 489px;
+    padding: 24px;
+  }
+
+  .container-cart img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .container-price h4 {
+    font-size: 14px;
+  }
+
+  .container-price p {
+    font-size: 14px;
+  }
+}
